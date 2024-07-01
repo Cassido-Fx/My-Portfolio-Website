@@ -10,11 +10,7 @@ function App() {
   return (
 <div className="App">
   <Router>
-    <div>
-      <Link to='/' element={<Header />}>
-      <button className='backBtn'>Back</button>
-      </Link>
-    </div>
+  
     <Routes>
       <Route path='/' element={<Header />} />
       <Route path='/about' element={<About />} />

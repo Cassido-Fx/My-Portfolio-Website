@@ -1,0 +1,33 @@
+body {
+	background-color: antiquewhite;
+}
+
+img {
+	height: 4rem;
+	display: flex;
+	margin: 2rem;
+}
+
+h3, p {
+	display: flex;
+	justify-content: center;
+}
+
+.container1, .container2 {
+	display: flex;
+	grid-row: 2rem;
+	grid-column: 50%;
+	justify-content: space-between;
+}
+
+li {
+	text-align: start;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+h4 {
+	text-align: left;
+}
