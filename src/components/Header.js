@@ -8,9 +8,9 @@ export const Header = () => {
     <header className="header">
      <h1>My Portfolio</h1>
       <nav>
-        <a href="about">About</a>
-        <a href="projects">Projects</a>
-        <a href="contact">Contact</a>
+        <a href="about" className='nav-menu'>About</a>
+        <a href="projects" className='nav-menu'>Projects</a>
+        <a href="contact" className='nav-menu'>Contact</a>
       </nav>
     </header>
 
@@ -23,6 +23,13 @@ export const Header = () => {
 
     <h3>OKAFOR CHINWIKE</h3>
     <p>FrontEnd Developer</p>
+    </div>
+
+    <div className='crafting'>
+      <h3>
+        <br /> <br />
+        CRAFTING IMMERSE WEB EXPERIENCES THROUGH WELL HARMONIZED CODES, PASSIONATE ABOUT CREATING USER-FRIENDLY INTERFACES THAT LEAVES SOME LASTING IMPRESSIONS.  
+      </h3>
     </div>
 
 </div>

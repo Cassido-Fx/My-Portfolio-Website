@@ -36,6 +36,20 @@
   margin-bottom: 6px;
   color: rgb(255, 255, 255);
   border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.backBtn:hover {
+  box-shadow: 5px 4px 11px rgba(132, 132, 32, 0.6);
+  transform: scale(1, 1);
+  background-color: white;
+  color: black;
+  
+}
+
+.backBtn:active {
+  opacity: 0.5;
 }
 
 @keyframes App-logo-spin {

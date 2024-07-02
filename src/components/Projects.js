@@ -11,8 +11,18 @@ const Projects = () => {
       <button className='backBtn'>Back</button>
       </Link>
     </div>
+
+    <div>
       <h2>Projects</h2>
-      <p>This is the projects section where you can showcase your work.</p>
+      <p>This is the projects section where you can showcase your work. 
+      https://cassido-fx.github.io/QR-Project/
+      </p>
+      </div>
+
+      <div>
+        <a href='https://cassido-fx.github.io/QR-Project/' target='_blank'>Click Here</a>
+      </div>
+
     </section>
   );
 };

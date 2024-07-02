@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import {Header} from './Header';
+import ProfilePic from '../images/profile-pic.jpeg';
 
 const About = () => {
   return (
@@ -18,16 +19,19 @@ const About = () => {
 
       <br />
 
-      <div>
-        <h2>Profile</h2>
+      <h2>Profile</h2>
+      <div className='profile-container'>
         <div className='profile1'>
-          <h4>FULL NAME: Okafor Chinwike Boniface</h4>
-          <h4>DATE OF BIRTH: 19-07-1996</h4>
-          <h4>CAREER: Frontend Developer</h4>
-          <h4>EMAIL: okaforcassy@gmail.com</h4>
-          <h4>PHONE: +234 810 729 4135</h4>
+          <h4><span className='topics'>FULL NAME:</span> Okafor Chinwike Boniface</h4>
+          <h4><span className='topics'>DATE OF BIRTH:</span> 19-07-1996</h4>
+          <h4><span className='topics'>CAREER:</span> Frontend Developer</h4>
+          <h4><span className='topics'>EMAIL:</span> okaforcassy@gmail.com</h4>
+          <h4> <span className='topics'>PHONE:</span> +234 810 729 4135</h4>
       </div>
        
+       <div>
+        <img className='profile-pic' src={ProfilePic} alt='picture' />
+       </div>
       </div>
 
       <br />
@@ -50,30 +54,30 @@ const About = () => {
 
         <div className='container1'>
           <div>
-          <img src='../images/html.png' alt='logo' />
+          <img src='../images/html.png' className='skills-logo' alt='logo' />
           <h3>HTML</h3>
         </div>
         <div>
-          <img src='../images/css.png' alt='logo' />
+          <img src='../images/css.png' className='skills-logo' alt='logo' />
           <h3>CSS</h3>
         </div>
         <div>
-          <img src='../images/js.png' alt='logo' />
+          <img src='../images/js.png' className='skills-logo' alt='logo' />
           <h3>JavaScript</h3>
         </div>
         </div>
 
         <div className='container2'>
         <div>
-          <img src='../images/bootstrap.jpeg' alt='logo' />
+          <img src='../images/bootstrap.jpeg' className='skills-logo' alt='logo' />
           <h3>Bootstrap</h3>
         </div>
         <div>
-          <img src='../images/react.webp' alt='logo' />
+          <img src='../images/react.webp' className='skills-logo' alt='logo' />
           <h3>React</h3>
         </div>
         <div>
-          <img src='../images/git.png' alt='logo' />
+          <img src='../images/git.png' className='skills-logo' alt='logo' />
           <h3>Git</h3>
         </div>
         </div>

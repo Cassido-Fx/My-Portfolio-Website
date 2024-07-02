@@ -1,5 +1,6 @@
 body {
 	background-color: antiquewhite;
+	padding-bottom: 50px;
 }
 
 img {
@@ -8,16 +9,79 @@ img {
 	margin: 2rem;
 }
 
+.skills-logo {
+	animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
 h3, p {
 	display: flex;
 	justify-content: center;
 }
 
-.container1, .container2 {
+.profile-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.profile-pic {
+	width: 15rem;
+	height: auto;
+	border: solid 1px black;
+	border-radius: 50%;
+}
+
+.profile1 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.topics {
+	color: rgb(190, 32, 32);
+}
+.container1 {
 	display: flex;
 	grid-row: 2rem;
 	grid-column: 50%;
 	justify-content: space-between;
+	animation: slideInLeft 4s forwards;
+	transform: translateX(300px);
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-200px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.container2 {
+	display: flex;
+	grid-row: 2rem;
+	grid-column: 50%;
+	justify-content: space-between;
+	animation: slideInRight 4s forwards;
+	transform: translateX(300px);
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(200px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
 
 li {
