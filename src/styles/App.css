@@ -45,11 +45,11 @@
   transform: scale(1, 1);
   background-color: white;
   color: black;
-  
 }
 
 .backBtn:active {
-  opacity: 0.5;
+  opacity: 0.4;
+  background-color: black;
 }
 
 @keyframes App-logo-spin {

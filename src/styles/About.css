@@ -10,7 +10,7 @@ img {
 }
 
 .skills-logo {
-	animation: animate 2s linear infinite;
+	animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
@@ -53,7 +53,7 @@ h3, p {
 	grid-row: 2rem;
 	grid-column: 50%;
 	justify-content: space-between;
-	animation: slideInLeft 4s forwards;
+	animation: slideInLeft 6s forwards;
 	transform: translateX(300px);
 }
 
@@ -71,7 +71,7 @@ h3, p {
 	grid-row: 2rem;
 	grid-column: 50%;
 	justify-content: space-between;
-	animation: slideInRight 4s forwards;
+	animation: slideInRight 6s forwards;
 	transform: translateX(300px);
 }
 
