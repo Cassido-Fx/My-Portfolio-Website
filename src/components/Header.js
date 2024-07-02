@@ -17,7 +17,7 @@ export const Header = () => {
     <div className='my-photo-container'>
     <img 
     src={myPhoto} 
-    alt="image" 
+    alt="profile pic" 
     className='my-photo'
     />
 

@@ -16,17 +16,19 @@ const Contact = () => {
       
      <div className='media-handles'>
       <h4>WE ARE JUST A DM AWAY...</h4>
-      <img src='../images/email-logo.jpg'   alt='logo' />
+      <img src={`${process.env.PUBLIC_URL}/images/email-logo.jpg`} alt='logo' />
       <h4>okaforcassy@gmail.com</h4>
 
-      <img src='../images/whatsapp-logo.jpg' alt='logo' />
+      <img src={`${process.env.PUBLIC_URL}/images/whatsapp-logo.jpg`} alt='logo' />
       <h4>+234 810 729 4135</h4>
 
-      <img src='../images/x-logo.webp' alt='logo' />
+      <img src={`${process.env.PUBLIC_URL}/images/x-logo.webp`} alt='logo' />
       <h4>@realCassido</h4>
 
-      <img src='../images/linkedin.avif' alt='logo' />
-      <h4>Click here <a href='http://linkedin.com/in/chinwike-okafor-324b47228' target='_blank'>Linkedin</a> </h4>
+      <img src={`${process.env.PUBLIC_URL}/images/linkedin.avif`} alt='logo' />
+      <h4>Click here <a href='http://linkedin.com/in/chinwike-okafor-324b47228' target='_blank' rel='noreferrer' >Linkedin</a> </h4>
+
+
 
      </div>
 

@@ -30,7 +30,7 @@ const About = () => {
       </div>
        
        <div>
-        <img className='profile-pic' src={ProfilePic} alt='picture' />
+        <img className='profile-pic' src={ProfilePic} alt='my pic' />
        </div>
       </div>
 
@@ -54,30 +54,31 @@ const About = () => {
 
         <div className='container1'>
           <div>
-          <img src='../images/html.png' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/html.png`} alt='logo' className='skills-logo'/>
+
           <h3>HTML</h3>
         </div>
         <div>
-          <img src='../images/css.png' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/css.png`} alt='logo' className='skills-logo'/>
           <h3>CSS</h3>
         </div>
         <div>
-          <img src='../images/js.png' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/js.png`} alt='logo' className='skills-logo'/>
           <h3>JavaScript</h3>
         </div>
         </div>
 
         <div className='container2'>
         <div>
-          <img src='../images/bootstrap.jpeg' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/bootstrap.jpeg`} alt='logo' className='skills-logo'/>
           <h3>Bootstrap</h3>
         </div>
         <div>
-          <img src='../images/react.webp' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/react.webp`} alt='logo' className='skills-logo'/>
           <h3>React</h3>
         </div>
         <div>
-          <img src='../images/git.png' className='skills-logo' alt='logo' />
+          <img src= {`${process.env.PUBLIC_URL}/images/git.png`} alt='logo' className='skills-logo'/>
           <h3>Git</h3>
         </div>
         </div>

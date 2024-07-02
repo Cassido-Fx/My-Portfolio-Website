@@ -20,7 +20,7 @@ const Projects = () => {
       </div>
 
       <div>
-        <a href='https://cassido-fx.github.io/QR-Project/' target='_blank'>Click Here</a>
+        <a href='https://cassido-fx.github.io/QR-Project/' target='_blank' rel="noreferrer">Click Here</a>
       </div>
 
     </section>
