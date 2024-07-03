@@ -28,13 +28,16 @@
 }
 
 .my-photo-container {
-  margin: 15px 10px 5px 10px;
-  height: 21rem;
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: slideInTop 2s ;
+}
+
+.my-photo {
+  margin: 15px 10px 5px 10px;
+  height: 21rem;
+  border-radius: 4px;
 }
 
 @keyframes slideInTop {

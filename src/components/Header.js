@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 import myPhoto from '../images/my_photo.jpg';
 
 export const Header = () => {
@@ -8,9 +9,9 @@ export const Header = () => {
     <header className="header">
      <h1>My Portfolio</h1>
       <nav>
-        <a href="about" className='nav-menu'>About</a>
-        <a href="projects" className='nav-menu'>Projects</a>
-        <a href="contact" className='nav-menu'>Contact</a>
+        <Link to="/about" className="nav-menu">About</Link>
+        <Link to="/projects" className="nav-menu">Projects</Link>
+        <Link to="/contact" className="nav-menu">Contact</Link>
       </nav>
     </header>
 
