@@ -38,6 +38,7 @@
   border-radius: 9px;
   cursor: pointer;
   transition: all 0.5s;
+  padding: 8px;
 }
 
 .backBtn:hover {

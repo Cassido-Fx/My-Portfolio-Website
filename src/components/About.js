@@ -7,10 +7,11 @@ import ProfilePic from '../images/profile-pic.jpeg';
 const About = () => {
   return (
     <section id="about" className="about">
-       <div>
+       <div className='backBtn-container'>
       <Link to='/' element={<Header />}>
       <button className='backBtn'>Back</button>
       </Link>
+      <div className='background-design'></div>
     </div>
       <h2>About</h2>
       <p>

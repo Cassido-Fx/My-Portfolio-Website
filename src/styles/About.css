@@ -2,6 +2,21 @@ body {
 	background-color: rgb(223, 162, 65);
 }
 
+.backBtn-container {
+	position: relative;
+}
+
+.background-design {
+	height: 20rem;
+	width: 20rem;
+	border-radius: 100%;
+	position: absolute;
+	top: -80px;
+	left: -80px;
+	z-index: -1;
+	background-image: linear-gradient(to right, rgb(190, 32, 32), rgba(231, 113, 132, 0.274));
+}
+
 img {
 	height: 4rem;
 	display: flex;
