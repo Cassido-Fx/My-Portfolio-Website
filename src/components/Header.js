@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 import myPhoto from '../images/my_photo.jpg';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
+
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect (() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+  
   return (
 <div>
     <div className="header">
      <h1>My Portfolio</h1>
-      <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+      <nav ref={menuRef} className={`nav-menu ${menuOpen ? 'open' : ''}`}>
         <Link to="/about" onClick={toggleMenu} className="nav-item">About</Link>
         <Link to="/projects" onClick={toggleMenu} className="nav-item">Projects</Link>
         <Link to="/contact" onClick={toggleMenu} className="nav-item">Contact</Link>

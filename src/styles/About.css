@@ -28,7 +28,7 @@ h3, p {
 
 .profile-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .profile-pic {
@@ -40,7 +40,6 @@ h3, p {
 
 .profile1 {
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
 }
 
