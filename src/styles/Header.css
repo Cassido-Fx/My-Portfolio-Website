@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
   background-color: #282c34;
   color: white;
+  margin: -10px;
+  position: sticky;
 }
 
 .header h1 {
@@ -18,8 +20,8 @@
 }
 
 .nav-menu {
-  cursor: pointer;
-  
+  display: flex;
+  gap: 20px;
 }
 
 .nav-menu:hover {
@@ -27,11 +29,52 @@
   transition: 0.6s;
 }
 
+.nav-item {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(223, 162, 65);;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 80px;
+    padding: 20px;
+    border: solid wheat 2px;
+    border-radius: 30px;
+  }
+  
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-item {
+    color: white;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 .my-photo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: slideInTop 2s ;
+  margin: 30px;
 }
 
 .my-photo {

@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 import myPhoto from '../images/my_photo.jpg';
 
 export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
   return (
 <div>
-    <header className="header">
+    <div className="header">
      <h1>My Portfolio</h1>
-      <nav>
-        <Link to="/about" className="nav-menu">About</Link>
-        <Link to="/projects" className="nav-menu">Projects</Link>
-        <Link to="/contact" className="nav-menu">Contact</Link>
+      <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+        <Link to="/about" onClick={toggleMenu} className="nav-item">About</Link>
+        <Link to="/projects" onClick={toggleMenu} className="nav-item">Projects</Link>
+        <Link to="/contact" onClick={toggleMenu} className="nav-item">Contact</Link>
       </nav>
-    </header>
+      <div className='hamburger' onClick={toggleMenu} >
+        &#9776;
+      </div>
+    </div>
 
     <div className='my-photo-container'>
     <img 
