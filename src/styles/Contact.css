@@ -36,13 +36,14 @@ img {
     cursor: pointer;
     color: antiquewhite;
     margin-bottom: 15px;
+    transition: all 0.6s;
 }
 
 .submitbtn:hover {
     background-color: antiquewhite;
     color: black;
     border: 7px solid antiquewhite;
-    transition: 0.6s;
+    transform: scale(1.05, 1.05);
 }
 
 input {

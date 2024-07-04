@@ -12,17 +12,31 @@ const Projects = () => {
       </Link>
     </div>
 
+
+    <div className='projects-heading'>
+
     <div>
       <h2>Projects</h2>
-      <p>This is the projects section where you can showcase your work. 
-      https://cassido-fx.github.io/QR-Project/
-      </p>
       </div>
 
-      <div>
-        <a href='https://cassido-fx.github.io/QR-Project/' target='_blank' rel="noreferrer">Click Here</a>
+      <div className='project-container'>
+        <div>
+        <img src= {`${process.env.PUBLIC_URL}/images/MovieLand.png`} className='project-image' alt='project pic'/>
+        </div>
+
+        <div className='project-details'>
+        <h2>MovieLand App</h2>
+          <p>React, CSS, API</p>
+          <h4> <span className='topics'>ABOUT:</span> MovieLand is a movie website with a search button that generates movie icons from the IMDB API</h4>
+        </div>
+
+        <div>
+        <a href='https://cassido-fx.github.io/MovieLand/' target='_blank' rel="noreferrer" className='previewBtn'>Preview Project</a>
+        </div>
       </div>
 
+    </div>
+    
     </section>
   );
 };
