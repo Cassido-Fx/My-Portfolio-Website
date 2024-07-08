@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import {Header} from './Header';
 import ProfilePic from '../images/profile-pic.jpeg';
+import ImageSlider from './ImageSlider';
 
 const About = () => {
   return (
@@ -87,6 +88,11 @@ const About = () => {
     <div className='soft-skills'>
       <h2>Soft Skills</h2>
       <p>Effective Communication | Teamwork and Collaboratin | Problem-solving | Physical and Emotional Strength | Time Management | Brand Awareness | Adaptability</p>
+    </div>
+
+    <div className='cert-container'>
+      <h2>Certificates</h2>
+      <ImageSlider />
     </div>
     </section>
   );

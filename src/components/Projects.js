@@ -35,6 +35,22 @@ const Projects = () => {
         </div>
       </div>
 
+      <div className='project-container'>
+        <div>
+        <img src= {`${process.env.PUBLIC_URL}/images/Calculator.png`} className='project-image' alt='project pic'/>
+        </div>
+
+        <div className='project-details'>
+        <h2>Calculator App</h2>
+          <p>HTML, CSS, JavaScript</p>
+          <h4> <span className='topics'>ABOUT:</span> Calculator App is a project with the basic calculation operators made to be functional with JavaScript</h4>
+        </div>
+
+        <div>
+        <a href='https://cassido-fx.github.io/Calculator-App/' target='_blank' rel="noreferrer" className='previewBtn'>Preview Project</a>
+        </div>
+      </div>
+
     </div>
     
     </section>

@@ -1,0 +1,23 @@
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
